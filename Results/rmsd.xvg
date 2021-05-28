@@ -1,0 +1,44 @@
+# This file was created Thu May 27 22:44:10 2021
+# Created by:
+#                    :-) GROMACS - gmx rms, VERSION 5.1.4 (-:
+# 
+# Executable:   /usr/local/gromacs/bin//gmx
+# Data prefix:  /usr/local/gromacs
+# Command line:
+#   gmx rms -s md_0.tpr -f md_0_noPBC.xtc -o rmsd.xvg -tu ns
+# gmx rms is part of G R O M A C S:
+#
+# God Rules Over Mankind, Animals, Cosmos and Such
+#
+@    title "RMSD"
+@    xaxis  label "Time (ns)"
+@    yaxis  label "RMSD (nm)"
+@TYPE xy
+@ subtitle "Backbone after lsq fit to Backbone"
+   0.0000000    0.0005000
+   0.0100000    0.0720109
+   0.0200000    0.0825894
+   0.0300000    0.0736099
+   0.0400000    0.0878202
+   0.0500000    0.0868618
+   0.0600000    0.0916652
+   0.0700000    0.0950061
+   0.0800000    0.0920014
+   0.0900000    0.0858171
+   0.1000000    0.0947484
+   0.1100000    0.1041640
+   0.1200000    0.1126256
+   0.1300000    0.1195164
+   0.1400000    0.1219639
+   0.1500000    0.1169528
+   0.1600000    0.1193396
+   0.1700000    0.1129158
+   0.1800000    0.1160468
+   0.1900000    0.1080991
+   0.2000000    0.1135150
+   0.2100000    0.1028093
+   0.2200000    0.1112476
+   0.2300000    0.1130827
+   0.2400000    0.1151368
+   0.2500000    0.1046772
+   0.2600000    0.1052117
