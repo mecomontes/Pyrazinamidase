@@ -1,5 +1,5 @@
 # [MD simulation of Pyrazinamidase](./3pl1.pdb)
-![Pyrazinamidase](/home/meco/Downloads/Bioinformatics/Pyrazinamidase/images/pyrazinamidase.png  "Pyrazinamidase Structure")
+![Pyrazinamidase](./images/pyrazinamidase.png  "Pyrazinamidase Structure")
 ---
 ## [1. Delete Water molecules-residues HOH in PDB file](./3pl1_clean.pdb)
 ```
@@ -13,7 +13,7 @@ grep -v HOH 3pl1.pdb > 3pl1_clean.pdb
 
 ---
 ## [3. Execute pdb2gmx](./3pl1.gro)
-![Water](/home/meco/Downloads/Bioinformatics/Pyrazinamidase/images/water.png  "Water models")
+![Water](./images/water.png  "Water models")
 ```
 gmx pdb2gmx -f 3pl1_fixed.pdb -o 3pl1_processed.gro -water tip3 -ignh
 ```
@@ -28,7 +28,7 @@ gmx editconf -f 3pl1_processed.gro -o 3pl1_newbox.gro -c -d 1.0 -bt cubic
 ## [4. Fill the box with water](./3pl1_solv.gro)
 The TIP3P water model as implemented in CHARMM (MacKerell) specifies a 3-site rigid water molecule with charges and Lennard-Jones parameters assigned to each of the 3 atoms. In GROMACS the fix shake command can be used to hold the two O-H bonds and the H-O-H angle rigid. A bond style of harmonic and an angle style of harmonic or charmm should also be used.
 
-![Box](/home/meco/Downloads/Bioinformatics/Pyrazinamidase/images/box.png  "Simulation box with solvated protein")
+![Box](./images/box.png  "Simulation box with solvated protein")
 ```
 gmx solvate -cp 3pl1_newbox.gro -cs spc216.gro -o 3pl1_solv.gro -p topol.top
 ```
@@ -71,7 +71,7 @@ K of HOH angle = 55
 ## [5. Adding Ions to the simulation box](./ions.tpr)
 Assemble the solvated electroneutral system.
 
-![ions](/home/meco/Downloads/Bioinformatics/Pyrazinamidase/images/ions.png  "Neutralized System")
+![ions](./images/ions.png  "Neutralized System")
 
 ### [ions.mdp File](./ions.mdp)
 ```
@@ -140,7 +140,7 @@ gmx energy -f em.edr -o potential.xvg
 xmgrace potential.xvg
 ```
 
-![Potential Progression](/home/meco/Downloads/Bioinformatics/Pyrazinamidase/images/potential.png  "Potential Progression")
+![Potential Progression](./images/potential.png  "Potential Progression")
 
 ## [7. NVT ensemble: Constant Number of particles, Volume, and Temperature](./nvt.trr)
 Equilibrate the solvent and ions around the protein. It needs to be bought to the temperature, you wish to simulate and stablish the proper orientation about the solute.
@@ -210,7 +210,7 @@ gmx energy -f nvt.edr -o temperature.xvg
 xmgrace temperature.xvg
 ```
 
-![Temperature](/home/meco/Downloads/Bioinformatics/Pyrazinamidase/images/temperature.png  "Temperature Progression")
+![Temperature](./images/temperature.png  "Temperature Progression")
 
 ---
 ## [8. NPT ensemble: Constant Number of Particles, Pressure, and Temperature](./npt.trr)
@@ -283,7 +283,7 @@ gmx energy -f npt.edr -o pressure.xvg
 xmgrace pressure.xvg
 ```
 
-![Pressure](/home/meco/Downloads/Bioinformatics/Pyrazinamidase/images/pressure.png  "TPressure Progression")
+![Pressure](./images/pressure.png  "TPressure Progression")
 
 ### [Visualizing Energy progression using Grace](./energy.xmg)
 ```
@@ -292,7 +292,7 @@ gmx energy -f npt.edr -o energy.xvg
 ```
 xmgrace energy.xvg
 ```
-![Energy Progression](/home/meco/Downloads/Bioinformatics/Pyrazinamidase/images/energy.png  "Energy Progression")
+![Energy Progression](./images/energy.png  "Energy Progression")
 
 ### [Visualizing Density progression using Grace](./density.xmg)
 ```
@@ -302,7 +302,7 @@ gmx energy -f npt.edr -o density.xvg
 xmgrace density.xvg
 ```
 
-![Density Progression](/home/meco/Downloads/Bioinformatics/Pyrazinamidase/images/density.png  "Density Progression")
+![Density Progression](./images/density.png  "Density Progression")
 
 ---
 ## [9. Run MD Simulation](./md_0.trr)
@@ -376,7 +376,7 @@ xmgrace rmsd.xvg
 **NOTICE:** Select 4 for backbone and 4 for backbone
 * **tu**: time units -> ns: nano-seconds
 
-![RMSD](/home/meco/Downloads/Bioinformatics/Pyrazinamidase/images/rmsd.png  "Root Mean Square Deviations")
+![RMSD](./images/rmsd.png  "Root Mean Square Deviations")
 
 ---
 ### [12. RMSF: Root Mean Square Fluctuation](./rmsf.xvg)
@@ -396,7 +396,7 @@ gmx rmsf -s em.tpr -f md_0_noPBC.xtc -o rmsf_em.xvg
 xmgrace rmsf_em.xvg
 ```
 
-![RMSF](/home/meco/Downloads/Bioinformatics/Pyrazinamidase/images/rmsf.png  "Root Mean Square Fluctuations")
+![RMSF](./images/rmsf.png  "Root Mean Square Fluctuations")
 
 ---
 ### [13. Radius of Gyration](./gyrate.xvg)
@@ -408,7 +408,7 @@ gmx gyrate -s md_0.tpr -f md_0_noPBC.xtc -o gyrate.xvg
 xmgrace gyrate.xvg
 ```
 
-![Gyration](/home/meco/Downloads/Bioinformatics/Pyrazinamidase/images/gyrate.png  "Radius of Gyration")
+![Gyration](./images/gyrate.png  "Radius of Gyration")
 
 ---
 ### [14. Visualize the simulation using VMD](./md_0.gro)
