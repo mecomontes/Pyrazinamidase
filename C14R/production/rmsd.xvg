@@ -1,0 +1,28 @@
+# This file was created Wed Jun 30 07:44:11 2021
+# Created by:
+#                    :-) GROMACS - gmx rms, VERSION 5.1.4 (-:
+# 
+# Executable:   /usr/local/gromacs/bin//gmx
+# Data prefix:  /usr/local/gromacs
+# Command line:
+#   gmx rms -s c14r.tpr -f c14r.xtc -o rmsd.xvg -tu ns
+# gmx rms is part of G R O M A C S:
+#
+# Good gRace! Old Maple Actually Chews Slate
+#
+@    title "RMSD"
+@    xaxis  label "Time (ns)"
+@    yaxis  label "RMSD (nm)"
+@TYPE xy
+@ subtitle "Protein after lsq fit to Protein"
+   0.0000000    0.0004960
+   0.1000000    0.1265296
+   0.2000000    0.1352776
+   0.3000000    0.1220022
+   0.4000000    0.1222591
+   0.5000000    0.1236176
+   0.6000000    0.1209996
+   0.7000000    0.1304631
+   0.8000000    0.1305783
+   0.9000000    0.1338185
+   1.0000000    0.1473000
