@@ -1,0 +1,37 @@
+# This file was created Tue Jun 29 10:30:12 2021
+# Created by:
+#                  :-) GROMACS - gmx gyrate, VERSION 5.1.4 (-:
+# 
+# Executable:   /usr/local/gromacs/bin//gmx
+# Data prefix:  /usr/local/gromacs
+# Command line:
+#   gmx gyrate -s c14y.tpr -f c14y_new.xtc -o gyrate.xvg
+# gmx gyrate is part of G R O M A C S:
+#
+# Gnomes, ROck Monsters And Chili Sauce
+#
+@    title "Radius of gyration (total and around axes)"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "Rg (nm)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Rg"
+@ s1 legend "Rg\sX\N"
+@ s2 legend "Rg\sY\N"
+@ s3 legend "Rg\sZ\N"
+         0     1.54693     1.14107     1.29725     1.34205
+       100     1.55004     1.15326     1.29772     1.33835
+       200      1.5476     1.16616     1.30038      1.3188
+       300     1.54064        1.16     1.27896     1.32884
+       400     1.54663     1.16868     1.28304     1.33122
+       500     1.54104     1.17136       1.275     1.32359
+       600     1.54976      1.1664     1.29214     1.33168
+       700     1.55067     1.18078      1.2894     1.32376
+       800     1.54897     1.18314     1.29131     1.31579
+       900     1.54122      1.1848     1.28829     1.29896
+      1000     1.55482     1.16985     1.30261     1.33027

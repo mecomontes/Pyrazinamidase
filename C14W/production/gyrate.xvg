@@ -1,0 +1,37 @@
+# This file was created Tue Jun 29 21:45:30 2021
+# Created by:
+#                  :-) GROMACS - gmx gyrate, VERSION 5.1.4 (-:
+# 
+# Executable:   /usr/local/gromacs/bin//gmx
+# Data prefix:  /usr/local/gromacs
+# Command line:
+#   gmx gyrate -s c14w.tpr -f c14w_new.xtc -o gyrate.xvg
+# gmx gyrate is part of G R O M A C S:
+#
+# Georgetown Riga Oslo Madrid Amsterdam Chisinau Stockholm
+#
+@    title "Radius of gyration (total and around axes)"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "Rg (nm)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Rg"
+@ s1 legend "Rg\sX\N"
+@ s2 legend "Rg\sY\N"
+@ s3 legend "Rg\sZ\N"
+         0     1.54689     1.13893     1.30263     1.33855
+       100     1.53386      1.1401     1.28705     1.32254
+       200     1.54629     1.14563     1.30036     1.33365
+       300     1.55318     1.13781     1.30963     1.34722
+       400     1.55019     1.13324     1.31169     1.34218
+       500     1.54406      1.1493     1.29025     1.33514
+       600     1.54993      1.1517     1.30624     1.33112
+       700      1.5457     1.14417     1.29402      1.3397
+       800     1.54688     1.13879     1.29936     1.34183
+       900      1.5484     1.15532     1.29058     1.33968
+      1000     1.55532     1.15718     1.29981     1.34515

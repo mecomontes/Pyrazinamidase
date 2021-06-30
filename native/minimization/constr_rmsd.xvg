@@ -1,0 +1,54 @@
+# This file was created Tue Jun 29 09:57:50 2021
+# Created by:
+#                  :-) GROMACS - gmx energy, VERSION 5.1.4 (-:
+# 
+# Executable:   /usr/local/gromacs/bin//gmx
+# Data prefix:  /usr/local/gromacs
+# Command line:
+#   gmx energy -f step4.0_minimization.edr -o constr_rmsd.xvg
+# gmx energy is part of G R O M A C S:
+#
+# GROningen Mixture of Alchemy and Childrens' Stories
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "()"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Constr. rmsd"
+    0.000000    0.000002
+    1.000000    0.000002
+    3.000000    0.000002
+    4.000000    0.000002
+    5.000000    0.000002
+    7.000000    0.000002
+    8.000000    0.000002
+    9.000000    0.000002
+   11.000000    0.000002
+   12.000000    0.000002
+   13.000000    0.000002
+   15.000000    0.000002
+   16.000000    0.000002
+   17.000000    0.000002
+   19.000000    0.000002
+   20.000000    0.000002
+   21.000000    0.000002
+   23.000000    0.000002
+   24.000000    0.000002
+   25.000000    0.000002
+   26.000000    0.000002
+   27.000000    0.000002
+   29.000000    0.000002
+   30.000000    0.000002
+   31.000000    0.000002
+   33.000000    0.000002
+   34.000000    0.000002
+   35.000000    0.000002
+   36.000000    0.000002
+   37.000000    0.000002
+   39.000000    0.000002

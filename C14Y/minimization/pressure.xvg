@@ -1,0 +1,52 @@
+# This file was created Tue Jun 29 10:25:00 2021
+# Created by:
+#                  :-) GROMACS - gmx energy, VERSION 5.1.4 (-:
+# 
+# Executable:   /usr/local/gromacs/bin//gmx
+# Data prefix:  /usr/local/gromacs
+# Command line:
+#   gmx energy -f step4.0_minimization.edr -o pressure.xvg
+# gmx energy is part of G R O M A C S:
+#
+# GRoups of Organic Molecules in ACtion for Science
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(bar)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Pressure"
+    0.000000  -21299.388672
+    1.000000  -21349.115234
+    2.000000  -21368.537109
+    3.000000  -21364.148438
+    4.000000  -21311.667969
+    6.000000  -21236.632812
+    8.000000  -21252.626953
+   10.000000  -21237.853516
+   11.000000  -21252.345703
+   12.000000  -21234.281250
+   13.000000  -21255.457031
+   14.000000  -21231.835938
+   16.000000  -21246.437500
+   17.000000  -21233.734375
+   18.000000  -21252.337891
+   20.000000  -21243.169922
+   21.000000  -21256.314453
+   22.000000  -21243.599609
+   24.000000  -21252.500000
+   25.000000  -21246.408203
+   26.000000  -21258.277344
+   28.000000  -21253.125000
+   29.000000  -21262.142578
+   30.000000  -21254.755859
+   31.000000  -21266.185547
+   32.000000  -21256.007812
+   33.000000  -21270.806641
+   34.000000  -21256.765625
+   36.000000  -21266.701172

@@ -1,0 +1,28 @@
+# This file was created Tue Jun 29 21:45:13 2021
+# Created by:
+#                    :-) GROMACS - gmx rms, VERSION 5.1.4 (-:
+# 
+# Executable:   /usr/local/gromacs/bin//gmx
+# Data prefix:  /usr/local/gromacs
+# Command line:
+#   gmx rms -s c14w.tpr -f c14w_new.xtc -o rmsd.xvg -tu ns
+# gmx rms is part of G R O M A C S:
+#
+# Great Red Owns Many ACres of Sand 
+#
+@    title "RMSD"
+@    xaxis  label "Time (ns)"
+@    yaxis  label "RMSD (nm)"
+@TYPE xy
+@ subtitle "Protein after lsq fit to Protein"
+   0.0000000    0.0008123
+   0.1000000    0.1076368
+   0.2000000    0.1185590
+   0.3000000    0.1157626
+   0.4000000    0.1098251
+   0.5000000    0.1109685
+   0.6000000    0.1173809
+   0.7000000    0.1136172
+   0.8000000    0.1189147
+   0.9000000    0.1131219
+   1.0000000    0.1237801

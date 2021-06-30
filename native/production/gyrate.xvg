@@ -1,0 +1,37 @@
+# This file was created Tue Jun 29 10:15:37 2021
+# Created by:
+#                  :-) GROMACS - gmx gyrate, VERSION 5.1.4 (-:
+# 
+# Executable:   /usr/local/gromacs/bin//gmx
+# Data prefix:  /usr/local/gromacs
+# Command line:
+#   gmx gyrate -s native.tpr -f native_new.xtc -o gyrate.xvg
+# gmx gyrate is part of G R O M A C S:
+#
+# God Rules Over Mankind, Animals, Cosmos and Such
+#
+@    title "Radius of gyration (total and around axes)"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "Rg (nm)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Rg"
+@ s1 legend "Rg\sX\N"
+@ s2 legend "Rg\sY\N"
+@ s3 legend "Rg\sZ\N"
+         0     1.54115     1.13587     1.29391     1.33636
+       100     1.54384     1.15066     1.29574     1.32813
+       200     1.55112     1.15142     1.30003      1.3402
+       300      1.5434     1.14549     1.29233     1.33488
+       400     1.54075     1.14023     1.28945     1.33605
+       500     1.54257     1.15065     1.28123     1.33922
+       600     1.54524     1.15475     1.28853     1.33483
+       700     1.54754     1.15074      1.2959     1.33649
+       800     1.54377     1.16365     1.29395     1.31836
+       900      1.5502     1.16514     1.32242      1.3038
+      1000      1.5462     1.19648     1.31699     1.27099
