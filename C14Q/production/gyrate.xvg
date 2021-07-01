@@ -1,0 +1,37 @@
+# This file was created Wed Jun 30 23:43:05 2021
+# Created by:
+#                  :-) GROMACS - gmx gyrate, VERSION 5.1.4 (-:
+# 
+# Executable:   /usr/local/gromacs/bin//gmx
+# Data prefix:  /usr/local/gromacs
+# Command line:
+#   gmx gyrate -s c14q.tpr -f c14q.xtc -o gyrate.xvg
+# gmx gyrate is part of G R O M A C S:
+#
+# Great Red Owns Many ACres of Sand 
+#
+@    title "Radius of gyration (total and around axes)"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "Rg (nm)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Rg"
+@ s1 legend "Rg\sX\N"
+@ s2 legend "Rg\sY\N"
+@ s3 legend "Rg\sZ\N"
+         0     1.54362     1.13885     1.29637     1.33714
+       100     1.53274     1.14658     1.27849     1.32266
+       200     1.53613     1.16301     1.28064     1.31406
+       300     1.53626     1.15315      1.2909     1.31302
+       400     1.53335     1.16477     1.30308     1.28361
+       500     1.53858     1.18245     1.29818     1.28492
+       600     1.53723     1.16178     1.29904     1.29959
+       700     1.52824     1.14999     1.29086     1.29701
+       800     1.52896     1.14311     1.28803     1.30757
+       900     1.54271     1.13355     1.30098     1.33508
+      1000     1.53189     1.14354     1.27407     1.32755

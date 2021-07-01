@@ -1,0 +1,37 @@
+# This file was created Wed Jun 30 20:40:16 2021
+# Created by:
+#                  :-) GROMACS - gmx gyrate, VERSION 5.1.4 (-:
+# 
+# Executable:   /usr/local/gromacs/bin//gmx
+# Data prefix:  /usr/local/gromacs
+# Command line:
+#   gmx gyrate -s c14e.tpr -f c14e.xtc -o gyrate.xvg
+# gmx gyrate is part of G R O M A C S:
+#
+# Giant Rising Ordinary Mutants for A Clerical Setup
+#
+@    title "Radius of gyration (total and around axes)"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "Rg (nm)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Rg"
+@ s1 legend "Rg\sX\N"
+@ s2 legend "Rg\sY\N"
+@ s3 legend "Rg\sZ\N"
+         0     1.54039     1.13461      1.2939      1.3357
+       100     1.55046     1.13938     1.29889     1.35003
+       200     1.55375     1.15578      1.2969     1.34555
+       300     1.55277     1.14938     1.29779     1.34792
+       400     1.54725     1.14507     1.29085     1.34555
+       500     1.56637     1.14949     1.32093     1.35678
+       600     1.54277     1.15353     1.29147      1.3273
+       700      1.5525      1.1577     1.29553     1.34235
+       800     1.55339     1.16044     1.30077     1.33695
+       900     1.54779     1.16536      1.2917     1.32844
+      1000     1.55211     1.17758     1.30374     1.31592

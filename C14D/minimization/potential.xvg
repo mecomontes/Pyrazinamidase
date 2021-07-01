@@ -1,0 +1,45 @@
+# This file was created Wed Jun 30 08:08:09 2021
+# Created by:
+#                  :-) GROMACS - gmx energy, VERSION 5.1.4 (-:
+# 
+# Executable:   /usr/local/gromacs/bin//gmx
+# Data prefix:  /usr/local/gromacs
+# Command line:
+#   gmx energy -f step4.0_minimization.edr -o potential.xvg
+# gmx energy is part of G R O M A C S:
+#
+# GRoups of Organic Molecules in ACtion for Science
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(kJ/mol)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Potential"
+    0.000000  -497647.625000
+    1.000000  -499321.062500
+    3.000000  -499953.187500
+    4.000000  -500266.781250
+    5.000000  -500518.343750
+    6.000000  -500559.656250
+    7.000000  -500739.156250
+    9.000000  -501367.375000
+   11.000000  -501576.375000
+   12.000000  -501768.812500
+   13.000000  -501837.593750
+   14.000000  -502014.562500
+   16.000000  -502232.218750
+   17.000000  -502368.687500
+   18.000000  -502638.562500
+   20.000000  -502749.531250
+   21.000000  -502844.968750
+   22.000000  -502937.812500
+   23.000000  -503005.375000
+   24.000000  -503059.125000
+   25.000000  -503086.156250
+   27.000000  -503410.281250

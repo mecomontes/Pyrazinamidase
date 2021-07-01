@@ -1,0 +1,28 @@
+# This file was created Wed Jun 30 23:42:49 2021
+# Created by:
+#                    :-) GROMACS - gmx rms, VERSION 5.1.4 (-:
+# 
+# Executable:   /usr/local/gromacs/bin//gmx
+# Data prefix:  /usr/local/gromacs
+# Command line:
+#   gmx rms -s c14q.tpr -f c14q.xtc -o rmsd.xvg -tu ns
+# gmx rms is part of G R O M A C S:
+#
+# Green Red Orange Magenta Azure Cyan Skyblue
+#
+@    title "RMSD"
+@    xaxis  label "Time (ns)"
+@    yaxis  label "RMSD (nm)"
+@TYPE xy
+@ subtitle "Protein after lsq fit to Protein"
+   0.0000000    0.0005037
+   0.1000000    0.1329487
+   0.2000000    0.1214866
+   0.3000000    0.1525007
+   0.4000000    0.1598336
+   0.5000000    0.1544803
+   0.6000000    0.1521322
+   0.7000000    0.1539779
+   0.8000000    0.1716982
+   0.9000000    0.1482770
+   1.0000000    0.1667035
